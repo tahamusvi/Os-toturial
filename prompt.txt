@@ -1,0 +1,37 @@
+this is prompt for ai.
+
+## top
+
+The `top` command provides a report on the status of processes and the allocation of memory and processor resources. This command is a useful tool for monitoring the status of processes on network servers. With the help of this tool, we can observe the overall consumption of system resources, such as memory and processor.
+
+
+- `n` - Specifies the number of times the display should be updated.
+- `p` - Specifies a particular process to report on.
+- `u` - Specifies a particular user's processes to report on.
+
+## Examples:
+
+- The `top` command will only be executed once.
+```
+top -n 1
+```
+- It will monitor the process with ID 1.
+
+```
+top -p 1
+```
+- It will monitor the processes of the user with the name "user1".
+
+```
+top -u user1
+```
+
+# 
+
+متن پایین رو به فرمت بالا در بیار
+
+• دستور kill: برای ارسال سیگنال خاتمه به یک پردازش یا گروه ی از پردازشها به کار م یرود.
+kill {kill-signal} {PID}
+kill {kill-signal ID {PID}
+برای مشاهده لیست سیگنال kill ها را نشان می دهد.
+kill -l
