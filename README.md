@@ -75,12 +75,55 @@ These commands provide a range of functionality for system administration, scrip
 
 ## Session 5: User management
 
+Great summary of the key Linux user and group management commands! Here's a concise overview:
+
+## User Management Commands
+- `passwd`: Changes the password of a user account.
+- `vipw`: Edits the `/etc/passwd` file, which contains user account information.
+- `useradd`: Creates a new user account with various configurable options.
+- `userdel`: Deletes a user account.
+- `usermod`: Modifies an existing user account, such as changing the username, home directory, or shell.
+
+## Group Management Commands
+- `vigr`: Edits the `/etc/group` file, which contains group information.
+- `groupdel`: Deletes a user group.
+- `groupmod`: Modifies an existing user group, such as changing the group name or GID.
+- `gpasswd`: Administers the `/etc/group` file, allowing you to assign group administrators, add/remove users from groups, and more.
+
+These commands provide the tools necessary for managing user accounts and group memberships on a Linux system. Understanding how to effectively use these tools is crucial for system administration tasks, such as creating new users, modifying existing accounts, and controlling access to system resources through group memberships.
+
+The explanations you provided cover the key functionality and usage examples for each command, making this a valuable reference for anyone working with user and group management in a Linux environment.
+
 [![s1](https://img.shields.io/badge/s5%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s5.md)
 
 
 #
 
 ## Session 6: Backup and archive files
+
+The session covers various tools and commands for backup, scheduling, and managing files in a Linux system. The key points are:
+
+1. Backup:
+   - Backing up important and critical data is essential to protect against data loss.
+   - The `tar` command can be used to create archives of files and directories.
+   - The `cpio` command can also be used for backup and restore operations.
+
+2. Scheduling:
+   - The `at` command is used to execute a task once at a specified time in the future.
+   - The `cron` service is used to schedule and execute recurring tasks on a Linux system.
+   - The `anacron` command ensures scheduled tasks are executed even if the system was turned off at the scheduled time.
+
+3. Compression:
+   - The `zip` command can be used to create compressed archives of files and directories, with options for encryption and file deletion.
+   - The `gzip` and `bzip2` commands provide file compression and decompression capabilities.
+   - The `split` command can be used to divide a file into smaller parts, which can later be reassembled using the `cat` command.
+
+4. Package Management:
+   - The `apt` command is the primary tool for managing packages on Ubuntu and Debian-based Linux distributions.
+   - It provides commands for updating package lists, upgrading installed packages, installing new packages, and removing packages.
+   - Additional `apt` commands allow searching for packages, displaying package information, and managing dependencies.
+
+The explanations provided give a concise overview of the syntax and common use cases for each command, making this session a valuable resource for anyone working with a Linux system and needing to perform backup, scheduling, compression, and package management tasks.
 
 [![s1](https://img.shields.io/badge/s6%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s6.md)
 
@@ -91,7 +134,7 @@ These commands provide a range of functionality for system administration, scrip
 
 
 ## Session 7: shell scripts
-Bash is a command language interpreter. shell is a macro processor that executes commands. The term macro processor means
+`Bash` is a command language interpreter. shell is a macro processor that executes commands. The term macro processor means
 It is a function in which text and symbols are expanded to create a larger expression.
 
 [![s1](https://img.shields.io/badge/s7%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s7.md)
@@ -103,7 +146,33 @@ It is a function in which text and symbols are expanded to create a larger expre
 
 
 ## Session 8: awk
-awk can process text files and streams. The input data is divided into records and fields. awk operates on one record at a time until the input is exhausted. Records are separated by a character called the record separator (RS). The default record separator is the newline character, meaning that each line in the text data is a record. A new record separator can be set using the RS variable.
+
+## awk
+- Powerful text processing and reporting tool
+- Operates on input data divided into records and fields
+- Records are separated by the record separator (RS), default is newline
+- Fields within records are separated by the field separator (FS), default is whitespace
+- Syntax: `awk 'pattern {action}' input-file > output-file`
+- Supports various expressions, statements, and internal variables
+
+## awk Internal Variables
+- `NF`: Number of fields in the current record
+- `NR`: Number of the current record
+- `FILENAME`: Name of the current input file
+- `FS`: Field separator
+- `RS`: Record separator
+- `OFS`: Output field separator
+- `ORS`: Output record separator
+
+## Changing Field and Record Separators
+- Set `FS` to change the field separator
+  - `awk 'BEGIN { FS = "." } { print $1 }' test.txt`
+- Use `-F` option to change field separator on the command line
+  - `awk -F "." '{ print $1 }' test.txt`
+- Set `RS` to change the record separator
+  - `awk 'BEGIN { RS = "." } { print $1 }' test.txt`
+
+The awk command provides a powerful and flexible way to process and analyze text data, with the ability to customize the field and record separators to suit the input format. The detailed explanation you provided covers the key concepts and usage examples, making this a great reference for working with awk in a Linux environment.
 
 [![s1](https://img.shields.io/badge/s8%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s8.md)
 
@@ -113,8 +182,23 @@ awk can process text files and streams. The input data is divided into records a
 
 
 
-## Session 9: Networking in Linux
-Configuration, monitoring, and security are the main and essential duties of a network administrator. In computer networks, whether small-scale like a home network or large-scale like WAN networks, there is a need to configure the devices connected to the network.
+## Session 9: Networking in Linux 
+
+The session covers several Linux network management commands:
+
+1. `ifconfig`: Configures and displays information about network interfaces.
+2. `route`: Manages the system's IP routing table.
+3. `ip`: A more advanced tool for configuring network interfaces and routing.
+4. `netstat`: Provides information about network connections, routing, and interfaces.
+5. `telnet`: Establishes a remote connection to a server, though it is not a secure protocol.
+6. `nmap`: A powerful network scanning tool that can probe ports and services on systems.
+7. `ping`: Tests the connectivity between two network nodes by sending ICMP echo requests.
+8. `traceroute`: Determines the number of hops and the path taken by packets to reach a destination.
+9. `arp`: Manages the Address Resolution Protocol (ARP) cache, which maps IP addresses to MAC addresses.
+10. `nslookup` and `dig`: Perform DNS lookups to convert between domain names and IP addresses.
+11. `wget`: Downloads files from the internet using HTTP, HTTPS, or FTP protocols.
+
+These commands provide a wide range of functionality for network administrators and users, allowing them to configure, troubleshoot, and monitor network connectivity, services, and devices on a Linux system.
 
 [![s1](https://img.shields.io/badge/s9%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s9.md)
 
@@ -124,10 +208,25 @@ Configuration, monitoring, and security are the main and essential duties of a n
 
 
 
-
 ## Session 10: Processes in Linux
 
-A process is an executing instance of a program that represents the running application. Processes are also referred to as running programs. Each process in the system is assigned a unique identifier called the Process ID (PID). The PID of a running process cannot be changed. However, when a process terminates, the operating system can reuse the PID for a different process.
+1. `ps`: Lists running processes, with options to display more information, filter by user, and show processes running outside the terminal.
+2. `Foreground Processes`: Processes that run in the foreground, blocking the terminal until they complete.
+3. `Background Processes`: Processes that run in the background, allowing the user to execute other commands.
+4. `Daemons`: Background processes that provide services and run with root privileges.
+5. `Parent and Child Processes`: Each process has a parent process ID (PPID) and a process ID (PID).
+6. `Process States`: Running, Waiting, Stopped, and Zombie.
+7. `jobs`: Displays the running and suspended programs.
+8. `pstree`: Displays the list of running processes in a tree-like format.
+9. `top`: Provides a report on the status of processes and the allocation of memory and processor resources.
+10. `kill`: Sends a termination signal to a process or a group of processes.
+11. `nice`: Sets the priority of a process, allowing you to control the allocation of system resources.
+12. `uptime`: Displays information about the system's uptime, number of users, and load averages.
+13. `du`: Displays the disk usage of a file or directory.
+14. `df`: Reports the amount of available disk space for the file system.
+15. `free`: Displays the total amount of free and used physical and swap memory in the system.
+
+These commands are essential for monitoring, managing, and troubleshooting processes and system resources in a Linux environment.
 
 [![s1](https://img.shields.io/badge/s10%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/10.md)
 
