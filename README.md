@@ -75,8 +75,6 @@ These commands provide a range of functionality for system administration, scrip
 
 ## Session 5: User management
 
-Great summary of the key Linux user and group management commands! Here's a concise overview:
-
 ## User Management Commands
 - `passwd`: Changes the password of a user account.
 - `vipw`: Edits the `/etc/passwd` file, which contains user account information.
@@ -232,11 +230,3 @@ These commands are essential for monitoring, managing, and troubleshooting proce
 
 
 
-#
-
-
-
-
-## Session 12: Start with simple command part 2
-
-[![s1](https://img.shields.io/badge/s12%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s12.md)
