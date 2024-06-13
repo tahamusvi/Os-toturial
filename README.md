@@ -3,7 +3,7 @@ a Os(linux) toturial for beginneras
 
 #
 
-## Session 2: file management
+## Session 2: File Management in Linux
 
 This session covers several essential Linux command line utilities and their usage, including:
 
@@ -21,11 +21,11 @@ This session covers several essential Linux command line utilities and their usa
 These commands are fundamental building blocks in the Linux command line environment, allowing users to perform a wide range of file management and system navigation tasks efficiently. The explanations provided give a concise overview of the syntax, common use cases, and practical examples for each command.
 
 
- [![s2](https://img.shields.io/badge/s2%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s2.md)
+ [![s2](https://img.shields.io/badge/s2%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/file_management.md)
 
 #
 
-## Session 3: Start with simple command
+## Session 3: Mastering Basic Linux Commands
 
 
 The session covers several basic Linux command line utilities and their usage. The commands discussed include:
@@ -42,11 +42,11 @@ The session covers several basic Linux command line utilities and their usage. T
 
 These commands are fundamental tools in the Linux command line environment, allowing users to perform various file manipulation, inspection, and processing tasks efficiently. The explanations provided give a concise overview of the syntax and common use cases for each command.
 
-[![s1](https://img.shields.io/badge/s3%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s3.md)
+[![s1](https://img.shields.io/badge/s3%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/basic_commands.md)
 
 #
 
-## Session 4: Start with simple command part 2
+## Session 4: More Essential Linux Commands
 
 The session covers several additional Linux command line utilities and their usage:
 
@@ -67,13 +67,13 @@ The session covers several additional Linux command line utilities and their usa
 
 These commands provide a range of functionality for system administration, scripting, and general command-line management tasks in a Linux environment. The explanations give a concise overview of the syntax, common use cases, and key points for each command.
 
-[![s1](https://img.shields.io/badge/s4%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s4.md)
+[![s1](https://img.shields.io/badge/s4%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/essential_commands.md)
 
 #
 
 
 
-## Session 5: User management
+## Session 5: User and Group Management in Linux
 
 ## User Management Commands
 - `passwd`: Changes the password of a user account.
@@ -92,50 +92,47 @@ These commands provide the tools necessary for managing user accounts and group 
 
 The explanations you provided cover the key functionality and usage examples for each command, making this a valuable reference for anyone working with user and group management in a Linux environment.
 
-[![s1](https://img.shields.io/badge/s5%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s5.md)
+[![s1](https://img.shields.io/badge/s5%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/user_and_group.md)
 
 
 #
 
-## Session 6: Backup and archive files
+## Session 6-1: Backup and Archiving in Linux
 
-The session covers various tools and commands for backup, scheduling, and managing files in a Linux system. The key points are:
+In this section, we'll use the `tar` and `cpio` commands to create backups and archives of files and directories. The `tar` command is the primary tool for creating archives, while `cpio` provides an alternative approach.
 
-1. Backup:
-   - Backing up important and critical data is essential to protect against data loss.
-   - The `tar` command can be used to create archives of files and directories.
-   - The `cpio` command can also be used for backup and restore operations.
 
-2. Scheduling:
-   - The `at` command is used to execute a task once at a specified time in the future.
-   - The `cron` service is used to schedule and execute recurring tasks on a Linux system.
-   - The `anacron` command ensures scheduled tasks are executed even if the system was turned off at the scheduled time.
+[![s1](https://img.shields.io/badge/s6%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/backup.md)
 
-3. Compression:
-   - The `zip` command can be used to create compressed archives of files and directories, with options for encryption and file deletion.
-   - The `gzip` and `bzip2` commands provide file compression and decompression capabilities.
-   - The `split` command can be used to divide a file into smaller parts, which can later be reassembled using the `cat` command.
+#
 
-4. Package Management:
-   - The `apt` command is the primary tool for managing packages on Ubuntu and Debian-based Linux distributions.
-   - It provides commands for updating package lists, upgrading installed packages, installing new packages, and removing packages.
-   - Additional `apt` commands allow searching for packages, displaying package information, and managing dependencies.
 
-The explanations provided give a concise overview of the syntax and common use cases for each command, making this session a valuable resource for anyone working with a Linux system and needing to perform backup, scheduling, compression, and package management tasks.
+## Session 6-2: Scheduling Tasks in Linux
 
-[![s1](https://img.shields.io/badge/s6%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s6.md)
+In this section, you'll learn to use the `at` and `cron` commands to schedule one-time and recurring tasks on your Linux system. Additionally, we'll cover `anacron`, which ensures scheduled tasks are executed even if the system was powered off at the scheduled time.
 
+
+[![s1](https://img.shields.io/badge/s6%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/scheduling_tasks.md)
+
+#
+
+
+## Session 6-3: Package Management in Linux
+
+This section focuses on `apt`, the primary package management tool for Debian-based Linux distributions like Ubuntu. We'll explore using `apt` to update package lists, upgrade installed packages, install and remove packages, search for packages, and display package information.
+
+[![s1](https://img.shields.io/badge/s6%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/apt.md)
 
 
 #
 
 
 
-## Session 7: shell scripts
+## Session 7: Unleashing the Power of Linux Shell Scripts
 `Bash` is a command language interpreter. shell is a macro processor that executes commands. The term macro processor means
 It is a function in which text and symbols are expanded to create a larger expression.
 
-[![s1](https://img.shields.io/badge/s7%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s7.md)
+[![s1](https://img.shields.io/badge/s7%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/shell_scripts.md)
 
 
 
@@ -143,7 +140,7 @@ It is a function in which text and symbols are expanded to create a larger expre
 
 
 
-## Session 8: awk
+## Session 8: Exploring the Versatility of AWK
 
 ## awk
 - Powerful text processing and reporting tool
@@ -172,7 +169,7 @@ It is a function in which text and symbols are expanded to create a larger expre
 
 The awk command provides a powerful and flexible way to process and analyze text data, with the ability to customize the field and record separators to suit the input format. The detailed explanation you provided covers the key concepts and usage examples, making this a great reference for working with awk in a Linux environment.
 
-[![s1](https://img.shields.io/badge/s8%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s8.md)
+[![s1](https://img.shields.io/badge/s8%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/awk.md)
 
 
 
@@ -180,7 +177,7 @@ The awk command provides a powerful and flexible way to process and analyze text
 
 
 
-## Session 9: Networking in Linux 
+## Session 9: Networking Commands and Utilities in Linux
 
 The session covers several Linux network management commands:
 
@@ -198,7 +195,7 @@ The session covers several Linux network management commands:
 
 These commands provide a wide range of functionality for network administrators and users, allowing them to configure, troubleshoot, and monitor network connectivity, services, and devices on a Linux system.
 
-[![s1](https://img.shields.io/badge/s9%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/s9.md)
+[![s1](https://img.shields.io/badge/s9%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/network.md)
 
 
 
@@ -206,7 +203,7 @@ These commands provide a wide range of functionality for network administrators 
 
 
 
-## Session 10: Processes in Linux
+## Session 10: Process Management and System Monitoring in Linux
 
 1. `ps`: Lists running processes, with options to display more information, filter by user, and show processes running outside the terminal.
 2. `Foreground Processes`: Processes that run in the foreground, blocking the terminal until they complete.
@@ -226,7 +223,7 @@ These commands provide a wide range of functionality for network administrators 
 
 These commands are essential for monitoring, managing, and troubleshooting processes and system resources in a Linux environment.
 
-[![s1](https://img.shields.io/badge/s10%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/10.md)
+[![s1](https://img.shields.io/badge/s10%20read-FCFC0F)](https://github.com/tahamusvi/Os-toturial/blob/main/process_and_monitoring.md)
 
 
 
